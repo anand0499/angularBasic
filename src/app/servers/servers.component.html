@@ -1,0 +1,19 @@
+<app-server></app-server>
+<app-server></app-server>
+<br>
+<button [disabled]="!btnClickable" (click)="onCreateServer()" >button</button>
+
+
+<h3>{{counter}}</h3>
+<button (click)="increaseCounter()">Increase</button>
+<button (click)="decreaseCounter()">Decrease</button>
+<br>
+<br>
+<input (input)="onChange($event)" >
+<!-- <p [innerText]="btnClickable"></p> -->
+
+<br><br><br>
+<h4>Ng Models</h4>
+<input type="text" [(ngModel)]="inputvalue" >
+
+{{inputvalue | json}}

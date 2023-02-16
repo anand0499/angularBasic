@@ -1,0 +1,9 @@
+<input type="text" class="form-control" [(ngModel)]="username" >
+ <p *ngIf="userNameCreated; else noServer" >
+     user Name Is {{username}}
+</p> 
+
+<ng-template #noServer>
+    <p>USer Name Entering</p>
+</ng-template>
+<button [disabled]="username===''" (click)="func()" >Reset</button>
